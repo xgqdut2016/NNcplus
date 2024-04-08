@@ -1,5 +1,5 @@
 # NNcplus
-Building a Deep Learning Inference Framework with C++Code
+Building a Deep Learning Inference Framework with C++ Code
 ## C++构建项目框架如下：
 1：新建一个include文件夹，该文件夹主要存放各种.h，.hpp等头文件，头文件用于申明各种函数，各种类  
 
@@ -8,7 +8,10 @@ Building a Deep Learning Inference Framework with C++Code
 3：新建一个CMakeLists.txt文件，这个文件编写相关的编译原则  
 
 4：新建一个build文件夹，该文件夹一开始是空的，等待上面提到的include,src文件夹都填充好了相关的文件，CMakeLists.txt也编写完成  
-
+## 头文件之间的依赖关系
+1：include/core/tensor.h是最基本的头文件，申明了tensor类的基本功能  
+2：include/core/linear.h依托tensor.h申明了一个线性层类  
+3：include/core/fnn.h依托linear.h申明了一个全连接神经网络类
 ## 编译过程如下：
 1：进入build文件夹
 ```bash

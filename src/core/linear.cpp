@@ -1,6 +1,6 @@
-#include "linear.h"
-#include "tensor.h"
-#include "omp_matrix.h"
+#include "core/linear.h"
+#include "core/tensor.h"
+#include "cpu/omp_matrix.h"
 #include <cassert> // For assert
 
 Linear::Linear(std::vector<size_t> shape)

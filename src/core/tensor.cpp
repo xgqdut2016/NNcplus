@@ -1,4 +1,4 @@
-#include "tensor.h"
+#include "core/tensor.h"
 #include <stdexcept> // for std::out_of_range
 #include <numeric>   // for std::accumulate
 

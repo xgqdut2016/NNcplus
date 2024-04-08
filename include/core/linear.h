@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "tensor.h"
+#include "core/tensor.h"
 class Linear
 {
 public:
